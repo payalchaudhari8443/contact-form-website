@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="images/contact-image.jpg" alt="Contact Image">
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+                <p class="contact-item">
+                    <img src="images/phone-logo.jpg" alt="Phone Logo" class="contact-icon"> 91-7587259564
+                </p>
+                <p class="contact-item">
+                    <img src="images/email-logo.jpg" alt="Email Logo" class="contact-icon"> info@orison.com
+                </p>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
